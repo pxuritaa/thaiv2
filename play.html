@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="thai.css"> 
+    <script src="thai.js"></script>
+    <title>thai</title>
+</head>
+<body>
+    <h1>คำราชาศัพท์</h1>
+    <div>
+        <input class="inputBox" type="text" id="normal" value="">
+        <input class="inputBox" type="button" id="next" value="คำถามถัดไป" onclick="next_question();">
+    </div>
+    <div> 
+        <input class="answerBox" type="text" id="normal1" value="1" onclick="check_answer(1)" >
+        <input class="answerBox" type="text" id="normal2" value="2" onclick="check_answer(2)">
+        <input class="answerBox" type="text" id="normal3" value="3" onclick="check_answer(3)">
+        <input class="answerBox" type="text" id="normal4" value="4" onclick="check_answer(4)">
+    </div>
+    <img src = "gold.png" id ="heart1">
+    <img src = "gold.png" id ="heart2">
+    <img src = "gold.png" id ="heart3">
+    <br>
+    <br>
+    <br>
+    <input class="inBox" type="button" id="replay" value="เริ่มเกมใหม่" onclick="replay();">
+    <div>
+
+        <audio id="soundBad">
+            <source src="soundClick.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="soundGood">
+            <source src="sound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+<script>
+    readFile();
+    replay();
+</script>
+
+</body>
+</html>
+

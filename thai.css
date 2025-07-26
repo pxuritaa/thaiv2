@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-image: url('thai.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #fffaf0;
+    color: #4b2e00;
+    text-align: center;
+    padding: 50px;
+    /* animation: subtleGlow 20s infinite alternate;  <-- remove or comment this out */
+}
+
+
+h1 {
+    font-size: 3.5em;
+    color: #a67c00;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px #d4af37;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: "  👑";
+    position: absolute;
+    right: -60px;
+    top: -10px;
+    font-size: 1em;
+}
+
+/* Divider below title */
+hr {
+    width: 140px;
+    height: 4px;
+    background-color: #d4af37;
+    border: none;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d4af37;
+}
+
+#normal {
+    font-size: 1.6em;
+    padding: 14px 24px;
+    margin: 20px;
+    border: 3px solid #d4af37;
+    border-radius: 14px;
+    background-color: #fff8dc;
+    color: #4b2e00;
+    font-weight: bold;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+#next {
+    background: linear-gradient(to right, #d4af37, #a67c00);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(166, 124, 0, 0.5);
+}
+
+#next:hover {
+    background: linear-gradient(to right, #ffe066, #c59d00);
+    transform: scale(1.05);
+}
+
+.answerBox {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 12px;
+    padding: 16px 26px;
+    border: 2px solid #c69c6d;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #4b2e00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.answerBox:hover {
+    background-color: #fbe5a2;
+    transform: scale(1.08) rotate(-1deg);
+    border-color: #a67c00;
+}
+
+.answerBox:active {
+    background-color: #ffd700;
+    transform: scale(0.98);
+}
+
+/* Feedback Box */
+#feedback {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    box-shadow: 0 0 12px #aee6ae;
+}
+
+.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+    box-shadow: 0 0 12px #f19c9c;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Score counter */
+#score {
+    font-size: 1.4em;
+    color: #a67c00;
+    margin-top: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff5cc;
+}
+
+/* Hide audio players */
+audio {
+    display: none;
+}
+img {
+    width: 100px;
+}
+
+.inBox {
+    background: linear-gradient(to right, #d4af37, #a67c00);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    margin: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(166, 124, 0, 0.5);
+    position: relative;
+}
