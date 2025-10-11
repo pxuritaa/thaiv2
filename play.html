@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="thai.css"> 
+    <link rel = "stylesheet" href="index.css"> 
     <script src="thai.js"></script>
+    <script src = "main.js" ></script>
     <title>thai</title>
 </head>
 <body>
+    <div w3-include-html="header.html"></div>
+
     <h1>คำราชาศัพท์</h1>
     <div>
         <input class="inputBox" type="text" id="normal" value="">
@@ -37,6 +41,7 @@
     </div>
 
 <script>
+    includeHTML();
     readFile();
     replay();
 </script>
