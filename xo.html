@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="xo.css"> 
+    <link rel = "stylesheet" href="index.css"> 
+    <script src="xo.js"></script>
+    <script src = "main.js" ></script>
+    <title>gamexo</title>
+</head>
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <h1>Tic Tac Toe</h1>
+    <div>
+        <input class="textbox" type="text" id="current" value="Player X">
+        <input class="textBox" type="text" id="winner" value="Winner">
+    </div>
+    <div> 
+        <input class="answerBox" type="button" id="a" value="a" onclick="press('a')" >
+        <input class="answerBox" type="button" id="b" value="b" onclick="press('b')">
+        <input class="answerBox" type="button" id="c" value="c" onclick="press('c')">
+    </div>
+    <div> 
+        <input class="answerBox" type="button" id="d" value="d" onclick="press('d')" >
+        <input class="answerBox" type="button" id="e" value="e" onclick="press('e')">
+        <input class="answerBox" type="button" id="f" value="f" onclick="press('f')">
+    </div>
+    <div> 
+        <input class="answerBox" type="button" id="g" value="g" onclick="press('g')" >
+        <input class="answerBox" type="button" id="h" value="h" onclick="press('h')">
+        <input class="answerBox" type="button" id="i" value="i" onclick="press('i')">
+    </div>
+    <div> 
+        <input class="reset" type="text" id="normal1" value="Reset" onclick="reset_game()" >
+    </div>
+
+    <br>
+    <br>
+    <br>
+        <audio id="soundBad">
+            <source src="soundClick.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="soundGood">
+            <source src="sound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+<script>
+    includeHTML();
+    readFile();
+    replay();
+</script>
+
+</body>
+</html>
+
