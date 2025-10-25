@@ -1,0 +1,95 @@
+/* === Background & Page Layout === */
+body {
+    background: radial-gradient(circle at top, #1a1a1a, #000000);
+    color: #c8ab06;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('thai.png');
+}
+
+/* Title */
+h1 {
+    font-size: 3.5em;
+    color: #0000007d;
+    text-shadow: 0 0 25px #ffb700, 0 0 50px #ffdf00;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+/* === Text Boxes (Player & Winner) === */
+.textbox {
+    background-color: #000000;
+    color: #ffdf00;
+    border: 2px solid #ffb700;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin: 8px;
+    font-size: 1.1em;
+    width: 170px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 240, 126, 0.3);
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* === Game Buttons === */
+.answerBox {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffdf00;
+    background: linear-gradient(145deg, #fff4f4, #cbb41e);
+    border: 3px solid #ffb700;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 241, 161, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* === Hover & Active Effects === */
+.answerBox:hover {
+    background: linear-gradient(145deg, #ead706, #2a2a2a);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffd700;
+}
+
+.answerBox:active {
+    transform: scale(0.98);
+    background: linear-gradient(145deg, #222, #111);
+}
+
+/* === Reset Button === */
+.reset {
+    margin-top: 30px;
+    background: linear-gradient(90deg, #ffb700, #ffd700);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 12px 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    transition: all 0.3s ease;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.reset:hover {
+    background: linear-gradient(90deg, #ffdf00, #fff06a);
+    box-shadow: 0 0 35px #ffd700;
+    transform: scale(1.08);
+}
+
+/* === Glow Animation === */
+@keyframes gold-glow {
+    0% { box-shadow: 0 0 10px #ffd700; }
+    50% { box-shadow: 0 0 25px #ffb700; }
+    100% { box-shadow: 0 0 10px #ffd700; }
+}
+
+.answerBox, .reset {
+    animation: gold-glow 2s infinite alternate;
+}
